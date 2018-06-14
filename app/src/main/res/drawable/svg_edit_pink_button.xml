@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:viewportWidth="32"
+    android:viewportHeight="32" android:width="32dp" android:height="32dp">
+    <group android:name="Layer_5">
+        <path android:name="cls-1" android:fillColor="#00000000" android:pathData="M0 0H32V32H0Z" />
+        <path android:name="cls-2" android:fillColor="#EF9A9A"
+            android:pathData="M7 21.25V25h3.75L21.81 13.93l-3.75-3.75ZM24.7 11a1 1 0 0 0 0-1.41L22.37 7.29a1 1 0 0 0-1.42 0L19.12 9.12l3.75 3.75Z" />
+    </group>
+</vector>

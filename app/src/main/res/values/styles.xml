@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="cardViewStyle">@style/CardView</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:navigationBarColor">@color/lightPurple</item>
+    </style>
+    <style name="optionsButtons">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/details_delte_button_background</item>
+        <item name="android:textColor">@color/deepPink</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#360029</color>
+    <color name="colorPrimaryDark">#360029</color>
+    <color name="colorAccent">#92507e</color>
+
+    <color name="backgroundPink">#ffe8dc</color>
+    <color name="mediumPink">#ffcccb</color>
+    <color name="deepPink">#ef9a9a</color>
+    <color name="lightBrown">#bd9b8f</color>
+    <color name="mediumBrown">#8b6b61</color>
+    <color name="darkBrown">#5e4238</color>
+    <color name="lightPurple">#92507e</color>
+    <color name="mediumPurple">#632452</color>
+    <color name="darkPurple">#360029</color>
+    <color name="superLightPink">#fff7f5</color>
+    <color name="green">#85c376</color>
+    <color name="orange">#FF8E0A</color>
+
+</resources>

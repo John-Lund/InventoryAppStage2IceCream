@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="question_marks">\??</string>
+    <string name="item_price_hint">\??.??</string>
+    <string name="edit_activity_title">Edit Item</string>
+
+    <!-- toast information strings -->
+    <string name="user_input_ic_name_warning">Ice cream requires a name before saving.</string>
+    <string name="user_input_ic_description_warning">Ice cream requires a description before saving.</string>
+    <string name="user_input_ic_stock_warning">Can\'t save without a stock value between 0 and 99</string>
+    <string name="user_input_ic_price_warning">Can\'t save without a valid price.</string>
+    <string name="user_input_ic_excessive_price_warning">Nobody pays that much for an ice cream.</string>
+    <string name="user_input_ic_price_format_warning">Prices can only have 2 decimal places.</string>
+    <string name="user_input_supplier_name_warning">Ice cream requires a supplier name before saving.</string>
+    <string name="user_input_supplier_phone_warning">Supplier requires a phone number before saving.</string>
+    <string name="user_input_supplier_phone_format_warning">Supplier needs a valid phone number using digits 0 - 9 or spaces only.</string>
+    <string name="user_input_supplier_email_address_warning">Email address is not valid.</string>
+    <string name="save_failed_message">Failed to save.</string>
+    <string name="save_successful_message">Save successful.</string>
+    <string name="edit_successful_message">Edit successful.</string>
+    <string name="delete_failed">Delete failed</string>
+    <string name="delete_successful">Delete successful</string>
+    <string name="entries_deleted_success">All entries successfully deleted.</string>
+    <string name="entries_deleted_nothing_to_delete_message">Looks like there was nothing to delete.</string>
+    <!-- UI strings -->
+    <string name="cone_select_button">Cone select button</string>
+    <string name="add_item">Add Item</string>
+    <string name="display_icon_drawer_button">display icon drawer button</string>
+    <string name="image_of_an_ice_cream_type">Image of an ice cream type</string>
+    <string name="delicious_ice_cream_name">Delicious ice cream name?</string>
+    <string name="describe_what_makes_it_so_special_yummy_and_delicious">Describe what makes it so special, yummy and delicious...</string>
+    <string name="decorative_image">decorative image</string>
+    <string name="left_in">left in</string>
+    <string name="stock">STOCK</string>
+    <string name="price_per_unit">price per unit</string>
+    <string name="currency_symbol">£</string>
+    <string name="supplier_name">SUPPLIER NAME?</string>
+    <string name="suppliername">Supplier Name</string>
+    <string name="a_phone_icon_image">A phone icon image.</string>
+    <string name="an_email_icon_image">an email icon image.</string>
+    <string name="contact_number">CONTACT NUMBER?</string>
+    <string name="contact_email_">contact email?</string>
+    <string name="an_address_book_icon_image">An address book icon image.</string>
+    <string name="contact_address">Contact Address?</string>
+    <string name="quit">QUIT</string>
+    <string name="save">SAVE</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <string name="quit_without_saving">Quit without saving?</string>
+    <string name="a_button_to_select_sandwich_as_ice_cream_type">A button to select sandwich as ice cream type.</string>
+    <string name="a_button_to_select_tub_as_ice_cream_type">A button to select tub as ice cream type.</string>
+    <string name="a_button_to_select_lolly_as_ice_cream_type">A button to select lolly as ice cream type.</string>
+    <string name="a_button_to_select_stick_as_ice_cream_type">A button to select stick as ice cream type.</string>
+    <string name="button_to_select_details_edit_activity">Button to select details edit activity.</string>
+    <string name="button_to_go_back_to_previous_activity">Button to go back to previous activity.</string>
+    <string name="details">Details</string>
+    <string name="a_plus_button_that_increases_quantity_in_stock">A plus button that increases quantity in stock.</string>
+    <string name="a_minus_button_that_decreases_quantity_in_stock">A minus button that decreases quantity in stock.</string>
+    <string name="supplier">Supplier</string>
+    <string name="a_button_that_calls_the_supplier_when_pressed">A button that calls the supplier when pressed.</string>
+    <string name="a_button_that_emails_the_supplier_when_pressed">A button that emails the supplier when pressed.</string>
+    <string name="delete">DELETE</string>
+    <string name="delete_this_item">Delete this item?</string>
+    <string name="a_button_that_when_pressed_displays_the_options_menu">A button that when pressed displays the options menu.</string>
+    <string name="title_my_ice_cream_parlour">Title: My Ice Cream Parlour.</string>
+    <string name="please_hit_the_button_below_to_add_items_to_the_database">Please hit the button below to add items to the database.</string>
+    <string name="an_image_of_an_ice_cream_cone">An image of an ice cream cone.</string>
+    <string name="cone">Cone.</string>
+    <string name="an_image_of_an_ice_cream_sandwich">An image of an ice cream sandwich.</string>
+    <string name="sandwich">Sandwich.</string>
+    <string name="an_image_of_a_frozen_lolly">An image of a frozen lolly.</string>
+    <string name="lolly">Lolly.</string>
+    <string name="an_image_of_an_ice_cream_on_a_stick">An image of an ice cream on a stick.</string>
+    <string name="stick">Stick.</string>
+    <string name="an_image_of_a_tub_of_ice_cream">An image of a tub of ice cream.</string>
+    <string name="tub">Tub.</string>
+    <string name="delete_all">DELETE ALL</string>
+    <string name="insert_demo">INSERT DEMO</string>
+    <string name="close_menu_button">Close menu button.</string>
+    <string name="close">Close</string>
+    <string name="sale">SALE</string>
+    <string name="per_unit">per unit</string>
+    <string name="currency_for_listview">£</string>
+
+
+</resources>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="0dp"
+                android:layout_height="74dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/card_background_pink" />
+
+            <ImageView
+                android:id="@+id/productIconLarge"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/image_of_an_ice_cream_type"
+                android:elevation="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/productTypeTextView"
+                app:srcCompat="@drawable/svg_icon_cone_white_circle" />
+
+            <TextView
+                android:id="@+id/productNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="bottom"
+                android:minHeight="40dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/mediumPurple"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                app:layout_constraintEnd_toStartOf="@+id/productIconLarge"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productIconSmall"
+                tools:text="Large strawberry flavoured thing" />
+
+            <ImageView
+                android:id="@+id/productIconSmall"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/image_of_an_ice_cream_type"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/svg_icon_cone" />
+
+            <TextView
+                android:id="@+id/productTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/montserrat_light"
+                android:textColor="@color/lightPurple"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/productIconSmall"
+                app:layout_constraintStart_toEndOf="@+id/productIconSmall"
+                app:layout_constraintTop_toTopOf="@+id/productIconSmall"
+                tools:text="CONE" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_light"
+                android:text="@string/per_unit"
+                android:textColor="@color/lightBrown"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/productIconLarge"
+                app:layout_constraintStart_toStartOf="@+id/productIconLarge"
+                app:layout_constraintTop_toBottomOf="@+id/productDescriptionTextView" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat_light"
+                android:includeFontPadding="false"
+                android:text="@string/left_in"
+                android:textColor="@color/lightBrown"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/productStockTextView"
+                app:layout_constraintTop_toTopOf="@+id/productStockTextView" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:includeFontPadding="false"
+                android:text="@string/stock"
+                android:textColor="@color/lightBrown"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/productPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/mediumBrown"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView6"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                tools:text="£ 1.05" />
+
+            <Button
+                android:id="@+id/saleButton"
+                android:layout_width="67dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/sale_button_background"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/montserrat_semibold"
+                android:includeFontPadding="false"
+                android:text="@string/sale"
+                android:textColor="@color/mediumPink"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/productStockTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/productStockTextView" />
+
+            <TextView
+                android:id="@+id/productStockTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:includeFontPadding="false"
+                android:textColor="@color/green"
+                android:textSize="24sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/productPriceTextView"
+                app:layout_constraintStart_toEndOf="@+id/saleButton"
+                tools:text="12" />
+
+            <TextView
+                android:id="@+id/productDescriptionTextView"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/montserrat_light"
+                android:includeFontPadding="false"
+                android:paddingTop="6dp"
+                android:textColor="@color/mediumBrown"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/productIconLarge"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productNameTextView"
+                tools:text="VANILLA ICE CREAM WITH MILK CHOCOLATE " />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/productDescriptionTextView"
+                app:layout_constraintEnd_toEndOf="@+id/productDescriptionTextView"
+                app:layout_constraintStart_toStartOf="@+id/productDescriptionTextView"
+                app:layout_constraintTop_toTopOf="@+id/productDescriptionTextView"
+                app:srcCompat="@drawable/product_description_gradient" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

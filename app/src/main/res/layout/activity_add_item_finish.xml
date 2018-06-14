@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".AddItemActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/add_item_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/add_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:includeFontPadding="false"
+        android:text="@string/add_item"
+        android:textColor="@color/deepPink"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/add_item_toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/add_item_toolbar"
+        app:layout_constraintStart_toStartOf="@+id/add_item_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/add_item_toolbar" />
+
+    <ImageButton
+        android:id="@+id/add_item_image_select_icon"
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/details_plus_minus_background"
+        android:contentDescription="@string/display_icon_drawer_button"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView5"
+        app:layout_constraintEnd_toEndOf="@+id/add_item_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_low_priority_black_24dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/add_item_toolbar">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/add_item_constraint_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/add_item_large_icon_imageview"
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:background="@color/backgroundPink"
+                android:contentDescription="@string/image_of_an_ice_cream_type"
+                android:paddingEnd="0dp"
+                android:paddingStart="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/svg_icon_sandwich" />
+
+            <EditText
+                android:id="@+id/add_item_product_name_edittext"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/backgroundPink"
+                android:elevation="0dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="@string/delicious_ice_cream_name"
+                android:inputType="textCapWords|textMultiLine"
+                android:maxLength="44"
+                android:paddingEnd="24dp"
+                android:paddingStart="16dp"
+                android:selectAllOnFocus="true"
+                android:shadowColor="@android:color/darker_gray"
+                android:textColor="@color/darkPurple"
+                app:layout_constraintBottom_toBottomOf="@+id/add_item_large_icon_imageview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/add_item_large_icon_imageview"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/add_item_product_descriptionEdittext"
+                android:layout_width="0dp"
+                android:layout_height="84dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/add_item_background_mediumpink"
+                android:elevation="0dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="@string/describe_what_makes_it_so_special_yummy_and_delicious"
+                android:inputType="textCapSentences|textMultiLine"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/darkPurple"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_item_large_icon_imageview" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:paddingBottom="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_item_product_descriptionEdittext">
+
+                <ImageView
+                    android:id="@+id/add_item_plus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/svg_plus_button_light"
+                    android:contentDescription="@string/decorative_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/add_item_minus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/svg_minus_cream_new"
+                    android:contentDescription="@string/decorative_image"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_item_plus"
+                    app:layout_constraintStart_toEndOf="@+id/add_item_in_stock_edittext"
+                    app:layout_constraintTop_toTopOf="@+id/add_item_plus" />
+
+                <EditText
+                    android:id="@+id/add_item_in_stock_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/add_item_background_mediumpink"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/question_marks"
+                    android:includeFontPadding="false"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:minWidth="50dp"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/darkPurple"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_item_plus"
+                    app:layout_constraintStart_toEndOf="@+id/add_item_plus"
+                    app:layout_constraintTop_toTopOf="@+id/add_item_plus" />
+
+                <TextView
+                    android:id="@+id/left_in_stock_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:includeFontPadding="false"
+                    android:text="@string/left_in"
+                    android:textColor="@color/lightBrown"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/add_item_minus"
+                    app:layout_constraintTop_toTopOf="@+id/add_item_minus" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:includeFontPadding="false"
+                    android:text="@string/stock"
+                    android:textColor="@color/lightBrown"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_item_minus"
+                    app:layout_constraintStart_toEndOf="@+id/add_item_minus" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/price_per_unit"
+                    android:textColor="@color/lightBrown"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toTopOf="@+id/add_item_unit_price_edittext"
+                    app:layout_constraintEnd_toEndOf="@+id/add_item_unit_price_edittext"
+                    app:layout_constraintStart_toStartOf="@+id/add_item_unit_price_edittext" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/currency_symbol"
+                    android:textColor="@color/mediumBrown"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_item_minus"
+                    app:layout_constraintStart_toEndOf="@+id/textView4"
+                    app:layout_constraintTop_toTopOf="@+id/add_item_minus" />
+
+                <EditText
+                    android:id="@+id/add_item_unit_price_edittext"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/add_item_background_mediumpink"
+                    android:ems="10"
+                    android:hint="@string/item_price_hint"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="8dp"
+                    android:selectAllOnFocus="true"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    app:layout_constraintStart_toEndOf="@+id/textView2" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/add_item_constraint_layout_3"
+                android:layout_width="0dp"
+                android:layout_height="450dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/superLightPink"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+                app:layout_constraintVertical_bias="0.0">
+
+                <EditText
+                    android:id="@+id/add_item_supplier_name_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/add_item_background_mediumpink"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:hint="@string/supplier_name"
+                    android:inputType="textCapCharacters"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="8dp"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/darkPurple"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/suppliername"
+                    android:textColor="@color/mediumBrown"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/add_item_supplier_name_edittext"
+                    app:layout_constraintTop_toBottomOf="@+id/add_item_supplier_name_edittext" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/a_phone_icon_image"
+                    app:layout_constraintStart_toStartOf="@+id/textView5"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5"
+                    app:srcCompat="@drawable/svg_phone_brown_icon" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/an_email_icon_image"
+                    app:layout_constraintStart_toStartOf="@+id/imageView3"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                    app:srcCompat="@drawable/svg_mail_brown_icon" />
+
+                <EditText
+                    android:id="@+id/add_item_supplier_phonenumber_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/add_item_background_mediumpink"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:hint="@string/contact_number"
+                    android:inputType="phone"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="8dp"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/darkPurple"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toTopOf="@+id/imageView3"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/add_item_supplier_emailaddress_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/add_item_background_mediumpink"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:hint="@string/contact_email_"
+                    android:inputType="textEmailAddress"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="8dp"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/darkPurple"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/an_address_book_icon_image"
+                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                    app:srcCompat="@drawable/svg_address_icon" />
+
+                <EditText
+                    android:id="@+id/add_item_supplier_address_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/add_item_background_mediumpink"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="top"
+                    android:hint="@string/contact_address"
+                    android:inputType="textCapWords|textMultiLine|textPostalAddress"
+                    android:minHeight="80dp"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="8dp"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/darkPurple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView7"
+                    app:layout_constraintTop_toBottomOf="@+id/add_item_supplier_emailaddress_edittext" />
+
+                <Button
+                    android:id="@+id/add_item_cancel_buttton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/sale_button_background"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/quit"
+                    android:textColor="@color/deepPink"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/add_item_save_button"
+                    app:layout_constraintTop_toTopOf="@+id/add_item_save_button" />
+
+                <Button
+                    android:id="@+id/add_item_save_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/details_delte_button_background"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/save"
+                    android:textColor="@color/deepPink"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@+id/add_item_supplier_address_edittext"
+                    app:layout_constraintTop_toBottomOf="@+id/add_item_supplier_address_edittext" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/add_item_scrim_screen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.5"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/darkPurple" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".9" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/add_item_cardview"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/add_item_constraint_layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/add_item_no_button"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/details_delte_button_background"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/no"
+                android:textColor="@color/deepPink"
+                app:layout_constraintBaseline_toBaselineOf="@+id/add_item_yes_button"
+                app:layout_constraintEnd_toStartOf="@+id/add_item_yes_button" />
+
+            <Button
+                android:id="@+id/add_item_yes_button"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/details_delte_button_background"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/yes"
+                android:textColor="@color/deepPink"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/add_item_warning_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/quit_without_saving"
+                android:textColor="@color/darkBrown"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/icon_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="0dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/add_item_type_select_cardview"
+        android:layout_width="300dp"
+        android:layout_height="312dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/darkPurple"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/icon_guide"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/add_item_type_select_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/add_item_cone_select_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/icon_selector_button_background"
+                android:contentDescription="@string/cone_select_button"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/svg_icon_cone" />
+
+            <ImageButton
+                android:id="@+id/add_item_sandwich_select_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/icon_selector_button_background"
+                android:contentDescription="@string/a_button_to_select_sandwich_as_ice_cream_type"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_item_cone_select_button"
+                app:srcCompat="@drawable/svg_icon_sandwich" />
+
+            <ImageButton
+                android:id="@+id/add_item_tub_select_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/icon_selector_button_background"
+                android:contentDescription="@string/a_button_to_select_tub_as_ice_cream_type"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_item_sandwich_select_button"
+                app:srcCompat="@drawable/svg_icon_tub" />
+
+            <ImageButton
+                android:id="@+id/add_item_lolly_select_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/icon_selector_button_background"
+                android:contentDescription="@string/a_button_to_select_lolly_as_ice_cream_type"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_item_tub_select_button"
+                app:srcCompat="@drawable/svg_lolly_with_rectangle_as_path" />
+
+            <ImageButton
+                android:id="@+id/add_item_stick_select_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/icon_selector_button_background"
+                android:contentDescription="@string/a_button_to_select_stick_as_ice_cream_type"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_item_lolly_select_button"
+                app:srcCompat="@drawable/svg_stick_new_path" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
