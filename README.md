@@ -3,7 +3,9 @@
 ### **Overview**
 
 This was my final project for the Udacity ABND sponsored by Google.  I spent most of my time on the UI with this project using quite a
-lot of constraint animations.  The   
+lot of constraint animations.  The app uses a Sqlite data base and a content provider for its data.
+
+Here's a video of the app: https://www.youtube.com/watch?v=w2t8PkZIs4o&t=35s
 
 
 ### **UI Screenshots**
